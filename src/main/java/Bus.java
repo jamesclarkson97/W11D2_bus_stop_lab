@@ -16,11 +16,15 @@ public class Bus {
         return this.passengers.size();
     }
 
-    public void addPassenger(Person person) {
-        this.passengers.add(person);
-    }
+//    public void addPassenger(Person person) {
+//        this.passengers.add(person);
+//    }
 
     public void removePassenger() {
         this.passengers.remove(0);
+    }
+
+    public void pickUp(BusStop busStop) {
+        this.passengers.add(busStop.removePassenger());
     }
 }
