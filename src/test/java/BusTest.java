@@ -7,8 +7,6 @@ public class BusTest {
     private Bus bus;
     private Person person;
 
-
-
     @Before
     public void before() {
         bus = new Bus("Edinburgh", 40);
